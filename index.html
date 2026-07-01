@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magno Barbearias</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header class="site-header">
         <div class="container header__inner">
             <a class="brand" href="#home">
-                <span class="brand__icon">✂️</span>
-                <span>
+                <img src="img/Perfil Nome escuro.jpg" alt="Logo Magno Barbearias" class="brand__logo">                <span>
                     <strong>Magno</strong><br>
                     Barbearias
                 </span>
@@ -21,7 +21,7 @@
                 <a href="#localizacao">Localização</a>
                 <a href="#agenda">Agendar</a>
             </nav>
-            <a class="button button--nav" href="#agenda">Instalar App</a>
+            <a class="button button--nav" href="install.html">Instalar App</a>
         </div>
     </header>
 
@@ -34,7 +34,7 @@
                 <p class="hero__text">Na Magno Barbearias, cada atendimento é pensado para entregar acabamento perfeito, conforto e presença marcante.</p>
                 <div class="hero__actions">
                     <a class="button button--primary" href="#agenda">Agendar</a>
-                    <a class="button button--secondary" href="https://wa.me/5511999999999?text=Olá%20Magno%20Barbearias,%20quero%20agendar%20um%20corte" target="_blank" rel="noreferrer noopener">WhatsApp</a>
+                    <a class="button button--secondary" href="https://wa.me/5532984286411?text=Olá%20Magno%20Barbearias,%20quero%20agendar%20um%20corte" target="_blank" rel="noreferrer noopener">WhatsApp</a>
                 </div>
             </div>
             <div class="hero__highlights">
@@ -108,17 +108,27 @@
         </section>
 
         <section id="horario" class="section section--dark">
-            <div class="section__header">
-                <span class="eyebrow">Horário de Funcionamento</span>
-                <h2>Estamos abertos de segunda a sábado</h2>
-                <p>Venha nos visitar durante a semana ou agende seu horário para o sábado e garanta um atendimento sem espera.</p>
-            </div>
-            <div class="hours-card card">
-                <ul>
-                    <li><strong>Segunda a Sexta:</strong> 09h às 20h</li>
-                    <li><strong>Sábado:</strong> 09h às 18h</li>
-                    <li><strong>Domingo:</strong> Fechado</li>
-                </ul>
+            <div class="hours-layout">
+                <div class="section__header hours-layout__content">
+                    <span class="eyebrow">Horário de Funcionamento</span>
+                    <h2>Estamos abertos de terça a sábado</h2>
+                    <p>Venha nos visitar durante a semana ou agende seu horário para o sábado e garanta um atendimento sem espera.</p>
+                </div>
+                <div class="hours-card card">
+                    <div class="hours-card__header">
+                        <span class="hours-card__badge">Aberto</span>
+                        <p>Atendimento de terça a sábado</p>
+                    </div>
+                    <ul class="hours-list">
+                        <li><span>Domingo</span><strong>Fechado</strong></li>
+                        <li><span>Segunda</span><strong>Fechado</strong></li>
+                        <li><span>Terça</span><strong>09:30 – 19:30</strong></li>
+                        <li><span>Quarta</span><strong>09:30 – 18:30</strong></li>
+                        <li><span>Quinta</span><strong>09:30 – 19:30</strong></li>
+                        <li><span>Sexta</span><strong>09:00 – 19:30</strong></li>
+                        <li><span>Sábado</span><strong>09:00 – 18:00</strong></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -130,21 +140,29 @@
             </div>
             <div class="location-grid">
                 <div class="location-card card">
-                    <h3>Av. Principal, 1234</h3>
-                    <p>Centro, São Paulo - SP</p>
+                    <div>
+                        <span class="eyebrow eyebrow--small">Endereço</span>
+                        <h3>Rua Luiz Fávero, 410</h3>
+                        <p>Bom Jardim, Juiz de Fora - MG</p>
+                    </div>
                     <div class="location-meta">
                         <div>
-                            <strong>Seg - Sex</strong>
-                            <span>09h às 20h</span>
-                        </div>
-                        <div>
-                            <strong>Sáb</strong>
-                            <span>09h às 18h</span>
+                            <strong>Como chegar</strong>
+                            <span>Estamos localizados na principal rua do bairro, com fácil acesso e estacionamento próximo.</span>
                         </div>
                     </div>
                 </div>
                 <div class="map-card card">
-                    <div class="map-placeholder">Mapa de localização</div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Luiz+F%C3%A1vero%2C+410+Bom+Jardim+Juiz+de+Fora+MG" target="_blank" rel="noreferrer noopener" class="map-link">
+                        <iframe
+                            class="map-iframe"
+                            src="https://www.google.com/maps?q=Rua%20Luiz%20F%C3%A1vero%2C%20410%2C%20Bom%20Jardim%2C%20Juiz%20de%20Fora%2C%20MG&z=15&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen
+                            title="Localização da Magno Barbearias"
+                        ></iframe>
+                    </a>
                 </div>
             </div>
         </section>
@@ -172,17 +190,17 @@
             <div class="team-grid">
                 <article class="team-card card">
                     <div class="team-avatar">JM</div>
-                    <h3>João</h3>
+                    <h3>Magno</h3>
                     <p>Especialista em cortes clássicos e estilos modernos com acabamento de alta precisão.</p>
                 </article>
                 <article class="team-card card">
                     <div class="team-avatar">LR</div>
-                    <h3>Lucas</h3>
+                    <h3>Léo</h3>
                     <p>Barbeiro com foco em barba e design facial, garantindo um visual elegante e limpo.</p>
                 </article>
                 <article class="team-card card">
                     <div class="team-avatar">MA</div>
-                    <h3>Mateus</h3>
+                    <h3>Riler</h3>
                     <p>Atendimento diferenciado e cortes personalizados para cada tipo de cabelo.</p>
                 </article>
             </div>
@@ -196,21 +214,22 @@
                     <p>Mais rápido, mais prático e com confirmação imediata pelo WhatsApp.</p>
                 </div>
                 <div class="cta-actions">
-                    <a class="button button--primary button--large" href="#" role="button">Instalar App</a>
-                    <a class="button button--secondary button--large" href="https://wa.me/5511999999999?text=Olá%20Magno%20Barbearias,%20quero%20agendar%20um%20corte" target="_blank" rel="noreferrer noopener">Agendar pelo WhatsApp</a>
+                    <a class="button button--primary button--large" href="install.html" role="button">Instalar App</a>
+                    <a class="button button--secondary button--large" href="https://wa.me/5532984286411?text=Olá%20Magno%20Barbearias,%20quero%20agendar%20um%20corte" target="_blank" rel="noreferrer noopener">Agendar pelo WhatsApp</a>
                 </div>
             </div>
-            <p class="small-text">Disponível em breve nas lojas de aplicativos. Clique no botão e agende seu próximo corte.</p>
         </section>
+
+
     </main>
 
     <footer class="footer">
-        <div class="container footer__content footer__content--stacked">
-            <div>
-                <p>Magno Barbearias © <span id="year">2026</span>. Estilo com tradição e precisão.</p>
-                <div>
-                    <span>Telefone: (11) 99999-9999</span>
-                    <a class="footer__link" href="https://wa.me/5511999999999" target="_blank" rel="noreferrer noopener">WhatsApp</a>
+        <div class="container footer__content">
+            <div class="footer__info">
+                <p class="footer__text">Magno Barbearias © <span id="year">2026</span>. Encontre sua melhor versão aqui.</p>
+                <div class="footer__contact">
+                    <span>Telefone: (32) 98428-6411</span>
+                    <a class="footer__link" href="https://wa.me/5532984286411" target="_blank" rel="noreferrer noopener">WhatsApp</a>
                 </div>
             </div>
             <a class="made-by" href="https://anapricksystems.com" target="_blank" rel="noreferrer noopener">
@@ -220,4 +239,3 @@
         </div>
     </footer>
 </body>
-</html> 
