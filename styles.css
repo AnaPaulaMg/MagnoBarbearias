@@ -1028,6 +1028,7 @@ textarea {
 @media (max-width: 960px) {
     .hero__content,
     .location-grid,
+    .hours-layout,
     .footer__content {
         grid-template-columns: 1fr;
     }
@@ -1038,6 +1039,17 @@ textarea {
 
     .hero__visual {
         max-width: 680px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-grid,
+    .team-grid,
+    .grid--3 {
+        grid-template-columns: 1fr;
     }
 
     .gallery-viewport {
@@ -1053,12 +1065,22 @@ textarea {
     .header__inner {
         flex-direction: column;
         align-items: stretch;
+        gap: 16px;
+        padding: 18px 0;
+    }
+
+    .brand {
+        justify-content: center;
     }
 
     .nav {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 12px;
+    }
+
+    .button--nav {
+        width: 100%;
     }
 }
 
@@ -1068,20 +1090,59 @@ textarea {
     }
 
     .button,
-    .button--nav {
+    .button--nav,
+    .button--large {
         width: 100%;
+        min-width: 0;
     }
 
     .hero {
-        padding-top: 64px;
+        padding: 72px 0 56px;
+    }
+
+    .hero__content {
+        min-height: auto;
+        gap: 24px;
+    }
+
+    .hero__copy h1 {
+        font-size: clamp(2.1rem, 8.5vw, 2.8rem);
+    }
+
+    .hero__text {
+        font-size: 0.98rem;
     }
 
     .section {
         padding: 56px 0;
     }
 
+    .section__header {
+        margin-bottom: 32px;
+    }
+
     .section__header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .card,
+    .hours-card,
+    .location-card,
+    .map-card,
+    .cta-card,
+    .download-card {
+        padding: 24px;
+    }
+
+    .hours-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hours-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 
     .gallery-viewport {
