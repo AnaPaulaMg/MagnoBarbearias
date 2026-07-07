@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magno Barbearias — cortes, barba e estilo premium em Juiz de Fora.">
     <title>Magno Barbearias</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -37,18 +38,24 @@
                     <a class="button button--secondary" href="https://wa.me/5532984286411?text=Olá%20Magno%20Barbearias,%20quero%20agendar%20um%20corte" target="_blank" rel="noreferrer noopener">WhatsApp</a>
                 </div>
             </div>
-            <div class="hero__highlights">
-                <div class="highlight-card">
-                    <span class="highlight__label">Acabamento</span>
-                    <p>Detalhes precisos com cortes e barba alinhados ao seu perfil.</p>
-                </div>
-                <div class="highlight-card">
-                    <span class="highlight__label">Ambiente</span>
-                    <p>Espaço elegante com atendimento personalizado e clima relaxante.</p>
-                </div>
-                <div class="highlight-card">
-                    <span class="highlight__label">Praticidade</span>
-                    <p>App exclusivo para agendar horário rápido e sem burocracia.</p>
+            <div class="hero__visual">
+                <div class="hero__stage">
+                    <div class="hero__orb hero__orb--one"></div>
+                    <div class="hero__orb hero__orb--two"></div>
+                    
+                <div class="hero__highlights">
+                    <div class="highlight-card">
+                        <span class="highlight__label">Acabamento</span>
+                        <p>Detalhes precisos com cortes e barba alinhados ao seu perfil.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight__label">Ambiente</span>
+                        <p>Espaço elegante com atendimento personalizado e clima relaxante.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight__label">Praticidade</span>
+                        <p>App exclusivo para agendar horário rápido e sem burocracia.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +123,7 @@
                 </div>
                 <div class="hours-card card">
                     <div class="hours-card__header">
-                        <span class="hours-card__badge">Aberto</span>
+                        <span id="hours-status" class="hours-card__badge">Verificando...</span>
                         <p>Atendimento de terça a sábado</p>
                     </div>
                     <ul class="hours-list">
@@ -173,11 +180,27 @@
                 <h2>Trabalhos recentes</h2>
                 <p>Veja alguns cortes, barbas e finalizações feitas pela equipe para inspirar seu próximo look.</p>
             </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">Foto 1</div>
-                <div class="gallery-item">Foto 2</div>
-                <div class="gallery-item">Foto 3</div>
-                <div class="gallery-item">Foto 4</div>
+            <div class="gallery-viewport">
+                <div class="gallery-track">
+                    <div class="gallery-set">
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Corte da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Barba da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Visual premium da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Acabamento de corte"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Ambiente da barbearia"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Estilo moderno"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Detalhe do serviço"></article>
+                    </div>
+                    <div class="gallery-set" aria-hidden="true">
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Corte da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Barba da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Visual premium da Magno Barbearias"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Acabamento de corte"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Ambiente da barbearia"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Estilo moderno"></article>
+                        <article class="gallery-card"><img src="img/Perfil Nome escuro.jpg" alt="Detalhe do serviço"></article>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -189,17 +212,23 @@
             </div>
             <div class="team-grid">
                 <article class="team-card card">
-                    <div class="team-avatar">JM</div>
+                    <div class="team-avatar">
+                        <img src="img/Perfil Nome escuro.jpg" alt="Foto de Magno">
+                    </div>
                     <h3>Magno</h3>
                     <p>Especialista em cortes clássicos e estilos modernos com acabamento de alta precisão.</p>
                 </article>
                 <article class="team-card card">
-                    <div class="team-avatar">LR</div>
+                    <div class="team-avatar">
+                        <img src="img/Perfil Nome escuro.jpg" alt="Foto de Léo">
+                    </div>
                     <h3>Léo</h3>
                     <p>Barbeiro com foco em barba e design facial, garantindo um visual elegante e limpo.</p>
                 </article>
                 <article class="team-card card">
-                    <div class="team-avatar">MA</div>
+                    <div class="team-avatar">
+                        <img src="img/Perfil Nome escuro.jpg" alt="Foto de Riler">
+                    </div>
                     <h3>Riler</h3>
                     <p>Atendimento diferenciado e cortes personalizados para cada tipo de cabelo.</p>
                 </article>
