@@ -1146,10 +1146,22 @@ textarea {
     }
 
     .gallery-viewport {
-        height: min(34vh, 240px);
+        height: auto;
+        max-height: 240px;
+        padding: 8px 0;
+    }
+
+    .gallery-track {
+        gap: 8px;
+    }
+
+    .gallery-set {
+        gap: 8px;
     }
 
     .gallery-card {
-        width: min(18vh, 130px);
+        width: 92px;
+        min-width: 92px;
+        height: 92px;
     }
 }
