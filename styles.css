@@ -1080,7 +1080,10 @@ textarea {
     }
 
     .button--nav {
-        width: 100%;
+        width: fit-content;
+        align-self: center;
+        padding: 10px 16px;
+        font-size: 0.9rem;
     }
 }
 
@@ -1090,10 +1093,16 @@ textarea {
     }
 
     .button,
-    .button--nav,
     .button--large {
         width: 100%;
         min-width: 0;
+    }
+
+    .button--nav {
+        width: fit-content;
+        min-width: 0;
+        padding: 10px 16px;
+        font-size: 0.9rem;
     }
 
     .hero {
