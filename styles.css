@@ -233,6 +233,23 @@ textarea {
     transition: transform 0.35s ease;
 }
 
+.hero__media {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__video {
+    width: min(100%, 460px);
+    max-width: 460px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    object-fit: contain;
+    display: block;
+}
+
 .hero__copy h1 {
     margin: 0 0 20px;
     font-size: clamp(3rem, 5vw, 4.5rem);
@@ -255,6 +272,16 @@ textarea {
 .hero__visual {
     display: grid;
     gap: 20px;
+}
+
+.sm\:hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .md\:block {
+        display: flex;
+    }
 }
 
 .hero__stage {
